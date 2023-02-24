@@ -1,0 +1,19 @@
+{
+  "name": "hello-github-packages-npm",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamakiii-sandbox/hello-github-packages-npm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tamakiii-sandbox/hello-github-packages-npm/issues"
+  },
+  "homepage": "https://github.com/tamakiii-sandbox/hello-github-packages-npm#readme"
+}
