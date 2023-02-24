@@ -13,7 +13,7 @@ node_modules:
 	npm install
 
 dist:
-	npx --no -- tsc --declaration --outDir dist src/**
+	npx --no -- tsc --declaration --outDir dist src/**/*.ts
 
 clean:
 	rm -rf dist

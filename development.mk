@@ -14,7 +14,7 @@ node_modules:
 	npm install --include=dev
 
 dist:
-	npx --no -- tsc --declaration --outDir dist src/** --watch
+	npx --no -- tsc --declaration --outDir dist src/**/*.ts --watch
 
 clean:
 	rm -rf dist
