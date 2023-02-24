@@ -1,4 +1,5 @@
-.PHONY: help install uninstall
+.PHONY: help install uninstall build clean
+.PHONY: dist
 
 help:
 	@cat $(firstword $(MAKEFILE_LIST))
@@ -6,8 +7,17 @@ help:
 install: \
 	node_modules
 
+build: \
+	dist
+
 node_modules:
-	npm install --dev
+	npm install --include=dev
+
+dist:
+	npx --no -- tsc --watch src/**
+
+clean:
+	rm -rf dist
 
 uninstall:
 	rm -rf node_modules
